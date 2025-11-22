@@ -15,6 +15,30 @@ export default function Hero() {
       const split = new SplitText("#heading", { type: "chars" });
       const splitDesc = new SplitText("#desc", { type: "chars,words" });
 
+      const buttons = heroRef.current?.querySelectorAll(".btn");
+      
+      // Hover animations using regular events
+      if (buttons) {
+        buttons.forEach((btn) => {
+          btn.addEventListener("mouseenter", () => {
+            gsap.to(btn, {
+              backgroundColor: "var(--text-secondary)",
+              color: "var(--bg-primary)",
+              y: -2,
+              duration: 0.1,
+            });
+          });
+          
+          btn.addEventListener("mouseleave", () => {
+            gsap.to(btn, {
+              backgroundColor: "transparent",
+              color: "var(--text-main)",
+              y: 0,
+              duration: 0.1,
+            });
+          });
+        });
+      }
       // Create timeline
       tlRef.current = gsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -58,8 +82,8 @@ export default function Hero() {
           vertical jungles, and the nights glow with bioluminescent wonder.
         </p>
         <div className="btn-container">
-          <button>Start Your Journey</button>
-          <button>Learn More</button>
+          <button className="btn" >Start Your Journey</button>
+          <button className="btn" >Learn More</button>
         </div>
       </div>
     </section>

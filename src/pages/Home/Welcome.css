@@ -17,17 +17,7 @@
 .welcome-section h2 span{
     color: var(--accent-color);
 }
-.stat:hover{
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
-    color: var(--bg-secondary);
-    background-color: var(--text-main);
-}
-.stat:hover .stat-name,
-.stat:hover .stat-desc,
-.stat:hover .stat-sub-desc{
-    color: var(--bg-secondary);
-}
+
 .welcome-section>div{
     display: flex;
     justify-content: center;

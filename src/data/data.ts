@@ -113,7 +113,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'The Levitating Archipelago',
     region: 'Equatorial Magnetic Zone',
     description: 'A chain of massive rock islands floating 500m above the sea. The view is unmatched.',
-    heroImage: '/assets/spots/archipelago.png',
+    heroImage: '/assets/spots/archipelago.webp',
     availableActivities: ['act-yoga', 'act-magnet'],
     rating: 4.9,
     difficulty: 'Moderate'
@@ -123,7 +123,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'Vellaris Prime',
     region: 'Deep Jungle',
     description: 'The capital city of the Vellara, woven entirely out of living bio-luminescent vines in the high canopy.',
-    heroImage: '/assets/spots/city.png',
+    heroImage: '/assets/spots/city.webp',
     availableActivities: ['act-glide', 'act-cruise'],
     rating: 4.7,
     difficulty: 'Relaxing'
@@ -133,7 +133,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'The Crystal Geysers',
     region: 'Kaelo Basin',
     description: 'Thermal vents that shoot sparkling mineral water high into the low-gravity atmosphere.',
-    heroImage: '/assets/spots/geysers.png',
+    heroImage: '/assets/spots/geysers.webp',
     availableActivities: ['act-surf'],
     rating: 4.5,
     difficulty: 'Extreme'
@@ -143,7 +143,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'Sapphire Sands Beach',
     region: 'Eastern Coast',
     description: 'Endless beaches made of crushed blue gemstones. The waves here are 20ft high but move in slow motion.',
-    heroImage: '/assets/spots/beach.png',
+    heroImage: '/assets/spots/beach.webp',
     availableActivities: ['act-cruise', 'act-yoga'],
     rating: 4.8,
     difficulty: 'Relaxing'
@@ -153,7 +153,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'The Whispering Caverns',
     region: 'Underground',
     description: 'Massive cave systems filled with Sonic-Reeds that hum when the wind blows.',
-    heroImage: '/assets/spots/caves.png',
+    heroImage: '/assets/spots/caves.webp',
     availableActivities: ['act-cave'],
     rating: 4.2,
     difficulty: 'Expert'
@@ -163,7 +163,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'Mount Aethel',
     region: 'Highlands',
     description: 'The highest peak on Tampa. At the summit, the atmosphere is thin enough to see the stars during the day.',
-    heroImage: '/assets/spots/mountain.png',
+    heroImage: '/assets/spots/mountain.webp',
     availableActivities: ['act-glide', 'act-magnet'],
     rating: 4.6,
     difficulty: 'Extreme'
@@ -173,7 +173,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'The Glass Desert',
     region: 'Southern Hemisphere',
     description: 'A region where lightning strikes turn the sand into intricate glass sculptures.',
-    heroImage: '/assets/spots/desert.png',
+    heroImage: '/assets/spots/desert.webp',
     availableActivities: ['act-magnet'],
     rating: 4.1,
     difficulty: 'Moderate'
@@ -183,7 +183,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'Star-Fall Crater',
     region: 'Northern Wastes',
     description: 'An ancient impact site that is now a lush lake filled with glowing algae.',
-    heroImage: '/assets/spots/crater.png',
+    heroImage: '/assets/spots/crater.webp',
     availableActivities: ['act-cruise', 'act-surf'],
     rating: 4.3,
     difficulty: 'Moderate'
@@ -193,7 +193,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'The Razor Canyon',
     region: 'Western Rift',
     description: 'A narrow canyon filled with sharp wind currents. Only for the bravest gliders.',
-    heroImage: '/assets/spots/canyon.png',
+    heroImage: '/assets/spots/canyon.webp',
     availableActivities: ['act-glide', 'act-cave'],
     rating: 4.8,
     difficulty: 'Expert'
@@ -203,7 +203,7 @@ export const TOUR_SPOTS: TourSpot[] = [
     name: 'Nimbus Gardens',
     region: 'Cloud Layer',
     description: 'Bio-engineered platforms that float within the clouds themselves.',
-    heroImage: '/assets/spots/clouds.png',
+    heroImage: '/assets/spots/clouds.webp',
     availableActivities: ['act-yoga'],
     rating: 5.0,
     difficulty: 'Relaxing'

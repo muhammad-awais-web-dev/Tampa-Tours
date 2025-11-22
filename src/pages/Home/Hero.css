@@ -66,11 +66,6 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
-  background: var(--text-secondary);
-  color: var(--bg-primary);
-  transform: translateY(-2px);
-}
 
 #right {
   display: flex;

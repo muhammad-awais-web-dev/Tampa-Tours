@@ -11,6 +11,38 @@ export default function Welcome() {
   const welcomeRef = useRef<HTMLDivElement>(null);
   const tlRef = useRef<gsap.core.Timeline | null>(null);
 
+  const stats = welcomeRef.current?.querySelectorAll(".stat");
+
+  stats?.forEach(stat => {
+    stat.addEventListener("mouseenter", () => {
+      gsap.to(stat, {
+        backgroundColor: "var(--text-secondary)",
+        color: "var(--bg-primary)",
+        y: -2,
+        duration: 0.1,
+      });
+      gsap.to(stat.querySelectorAll("p"), {
+        textShadow: "0 0 10px var(--bg-primary)",
+        color: "var(--bg-primary)",
+        duration: 0.1,
+      });
+    });
+
+    stat.addEventListener("mouseleave", () => {
+      gsap.to(stat, {
+        backgroundColor: "transparent",
+        color: "var(--text-main)",
+        y: 0,
+        duration: 0.1,
+      });
+      gsap.to(stat.querySelectorAll("p"), {
+        textShadow: "none",
+        color: "var(--text-secondary)",
+        duration: 0.1,
+      });
+    });
+  })
+
   useGSAP(
     () => {
       const split = new SplitText(welcomeRef.current!.querySelector("h2")!, {
