@@ -5,8 +5,8 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
 export default function Home() {
-    let tl = gsap.timeline();
-    let split = SplitText.create("#heading");
+    const tl = gsap.timeline();
+    const split = SplitText.create("#heading");
     tl.from(split.chars, {
         duration: 2,
         opacity: 0,
@@ -39,6 +39,28 @@ const StyledWrapper = styled.section`
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .content h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .content h1 {
+            font-size: 2.5rem;
+        }
+        
+        .wrapper {
+            font-size: 1.5rem;
+        }
     }
 
 `

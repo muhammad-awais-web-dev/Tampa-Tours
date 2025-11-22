@@ -10,7 +10,7 @@ function App() {
       <div className="app-container">
       
       <nav className="navbar">
-        <div className="logo">TAmpa Tours</div>
+        <div className="logo">Tampa Tours</div>
         <ThemeToggle />
       </nav>
 
