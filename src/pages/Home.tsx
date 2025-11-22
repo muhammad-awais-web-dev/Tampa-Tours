@@ -1,19 +1,27 @@
 import styled from "styled-components";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { useEffect } from "react";
 
 gsap.registerPlugin(SplitText);
 
 export default function Home() {
-    const tl = gsap.timeline();
-    const split = SplitText.create("#heading");
-    tl.from(split.chars, {
-        duration: 2,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-        stagger: 0.05,
-    }); 
+    useEffect(() => {
+        const tl = gsap.timeline();
+        const split = SplitText.create("#heading");
+        tl.from(split.chars, {
+            duration: 2,
+            opacity: 0,
+            y: 50,
+            ease: "back.out",
+            stagger: 0.05,
+        });
+
+        return () => {
+            split.revert();
+        };
+    }, []);
+
   return (
     <StyledWrapper>
         <div className="wrapper">
@@ -22,13 +30,13 @@ export default function Home() {
             </div>
         </div>
     </StyledWrapper>
-  )
+  );
 }
 const StyledWrapper = styled.section`
     .wrapper{
         height: 100vh;
         background-color: var(--bg-primary);
-        // background-image: var(--background-image-hero);
+        /* background-image: var(--background-image-hero); */
         background-image: linear-gradient(0deg, var(--bg-primary) 0%, #e0f2fe00 100%), var(--background-image-hero);
         color: var(--text-main);
         display: flex;
@@ -63,4 +71,4 @@ const StyledWrapper = styled.section`
         }
     }
 
-`
+`;
