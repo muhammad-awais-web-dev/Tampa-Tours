@@ -7,6 +7,9 @@ gsap.registerPlugin(SplitText);
 
 export default function Home() {
     useEffect(() => {
+        const element = document.querySelector("#heading");
+        if (!element) return;
+
         const tl = gsap.timeline();
         const split = new SplitText("#heading", { type: "chars" });
         tl.from(split.chars, {
