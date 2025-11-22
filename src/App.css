@@ -1,9 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   /* --- DAY MODE (Tropical Paradise) --- */
   --bg-primary: #fef3c7;      /* Tampa Sand */
   --bg-primary-10: #fef3c788;      /* Tampa Sand */
   --bg-secondary: #e0f2fe;    /* Tampa Sky */
   --text-main: #15803d;       /* Jungle Green */
+  --text-primary: #111;       /* Jungle Green */
   --text-secondary: #0f172a;  /* Dark Blue */
   --accent-color: #0ea5e9;    /* Ocean Blue */
   --card-bg: rgba(255, 255, 255, 0.6); /* Frosted Glass Day */
@@ -16,6 +22,7 @@ body.dark-mode {
   --bg-primary-10: #0f172a88;      /* Deep Void */
   --bg-secondary: #1e293b;    /* Dark Slate */
   --text-main: #e2e8f0;       /* Soft White */
+  --text-primary: #e2e8f0;       /* Soft White */
   --text-secondary: #bef264;  /* Neon Lime */
   --accent-color: #8b5cf6;    /* Neon Purple */
   --card-bg: rgba(15, 23, 42, 0.6); /* Frosted Glass Night */
