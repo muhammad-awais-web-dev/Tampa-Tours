@@ -1,7 +1,7 @@
 import './App.css';
 import ThemeToggle from './components/ThemeToggle';
 import { ThemeProvider } from './context/ThemeContext';
-import Home from './pages/home';
+import Home from './pages/Home';
 // Don't forget to wrap this component in ThemeProvider inside main.tsx!
 
 function App() {
