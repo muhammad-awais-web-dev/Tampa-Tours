@@ -1,0 +1,23 @@
+#Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: -100px;
+}
+#nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 40px;
+    background-color: var(--bg-primary-10);
+    backdrop-filter: blur(10px);
+    height: 60px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}

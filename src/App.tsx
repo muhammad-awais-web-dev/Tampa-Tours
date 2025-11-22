@@ -1,19 +1,14 @@
 import './App.css';
-import ThemeToggle from './components/ThemeToggle';
+import Navbar from './components/Navbar';
 import { ThemeProvider } from './context/ThemeContext';
-import Home from './pages/Home';
+import Home from './pages/Hero/Home';
 // Don't forget to wrap this component in ThemeProvider inside main.tsx!
 
 function App() {
   return (
     <ThemeProvider>
       <div className="app-container">
-      
-      <nav className="navbar">
-        <div className="logo">TAmpa Tours</div>
-        <ThemeToggle />
-      </nav>
-
+      <Navbar />
       <main>
         <Home />
       </main>

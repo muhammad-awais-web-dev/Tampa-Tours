@@ -1,9 +1,11 @@
-import Hero from "./Hero/Hero";
+import Hero from "./Hero";
+import Welcome from "./Welcome";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Welcome />
     </>
   );
 }

@@ -11,7 +11,7 @@
   --text-main: #15803d;       /* Jungle Green */
   --text-primary: #111;       /* Jungle Green */
   --text-secondary: #0f172a;  /* Dark Blue */
-  --accent-color: #0ea5e9;    /* Ocean Blue */
+  --accent-color: #15803d;    /* Ocean Blue */
   --card-bg: rgba(255, 255, 255, 0.6); /* Frosted Glass Day */
   --background-image-hero: url('./assets/tampa-day-hero.jpg');
 }
