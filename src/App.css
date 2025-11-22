@@ -1,0 +1,109 @@
+:root {
+  /* --- DAY MODE (Tropical Paradise) --- */
+  --bg-primary: #fef3c7;      /* Tampa Sand */
+  --bg-primary-10: #fef3c788;      /* Tampa Sand */
+  --bg-secondary: #e0f2fe;    /* Tampa Sky */
+  --text-main: #15803d;       /* Jungle Green */
+  --text-secondary: #0f172a;  /* Dark Blue */
+  --accent-color: #0ea5e9;    /* Ocean Blue */
+  --card-bg: rgba(255, 255, 255, 0.6); /* Frosted Glass Day */
+  --background-image-hero: url('./assets/tampa-day-hero.jpg');
+}
+
+body.dark-mode {
+  /* --- NIGHT MODE (Bioluminescent) --- */
+  --bg-primary: #0f172a;      /* Deep Void */
+  --bg-primary-10: #0f172a88;      /* Deep Void */
+  --bg-secondary: #1e293b;    /* Dark Slate */
+  --text-main: #e2e8f0;       /* Soft White */
+  --text-secondary: #bef264;  /* Neon Lime */
+  --accent-color: #8b5cf6;    /* Neon Purple */
+  --card-bg: rgba(15, 23, 42, 0.6); /* Frosted Glass Night */
+  --background-image-hero: url('./assets/tampa-night-hero.jpg');
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  
+  /* APPLY THE VARIABLES HERE */
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  
+  /* Smooth transition when switching themes */
+  transition: all 0.3s ease, color 0.3s ease;
+  position: relative;
+  transition: all transform 1s;
+}
+
+/* Global Button Style (so we don't have to rewrite it) */
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.app-container {
+  min-height: 100vh; /* Full height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 40px;
+  position: sticky;
+  height: 40px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -103px;
+  top: 0;
+  background-color: var(--bg-primary-10);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
