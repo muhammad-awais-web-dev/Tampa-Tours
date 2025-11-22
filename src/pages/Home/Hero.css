@@ -1,0 +1,224 @@
+.Hero {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  background-image: linear-gradient(0deg, var(--bg-primary) 0%, #e0f2fe00 100%),
+    var(--background-image-hero);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 20px;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 60px 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 1.1;
+}
+
+.content span {
+  font-size: 2rem;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--text-primary);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--text-main);
+  background: transparent;
+  color: var(--text-main);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--text-secondary);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
+
+#right {
+  display: flex;
+  justify-self: center;
+  width: 100%;
+  max-width: 1100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  z-index: 50;
+  margin-top: 40px;
+}
+
+.stat {
+  color: var(--text-primary);
+  width: 100%;
+  height: 150px;
+  background-color: var(--bg-primary-10);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid var(--text-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.stat h2 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.stat p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Tablet - 1024px and below */
+@media (max-width: 1024px) {
+  .Hero {
+    padding: 60px 50px;
+  }
+
+  #right {
+    gap: 15px;
+  }
+
+  .stat {
+    height: 130px;
+  }
+}
+
+/* Small Tablet - 768px and below */
+@media (max-width: 768px) {
+  .Hero {
+    padding: 40px 30px;
+    gap: 15px;
+  }
+
+  #right {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stat {
+    width: calc(50% - 10px);
+    height: 120px;
+    font-size: 1.3rem;
+  }
+
+  .stat p {
+    font-size: 0.9rem;
+  }
+
+  .btn-container {
+    gap: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+  .Hero {
+    padding: 30px 20px;
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  #right {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .stat {
+    width: 100%;
+    height: 100px;
+    font-size: 1.2rem;
+  }
+
+  .stat p {
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .Hero {
+    padding: 25px 15px;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .stat {
+    height: 90px;
+  }
+}

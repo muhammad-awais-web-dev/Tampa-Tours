@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import { ThemeProvider } from './context/ThemeContext';
-import Home from './pages/Hero/Home';
+import Home from './pages/Home/Home';
 // Don't forget to wrap this component in ThemeProvider inside main.tsx!
 
 function App() {

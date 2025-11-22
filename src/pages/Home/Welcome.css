@@ -1,0 +1,71 @@
+.welcome-section{
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.welcome-section .stat{
+    height: fit-content;
+    padding: 10px;
+    min-height: -webkit-fill-available;
+}
+.welcome-section h2{
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+.welcome-section h2 span{
+    color: var(--accent-color);
+}
+.stat:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    color: var(--bg-secondary);
+    background-color: var(--text-main);
+}
+.stat:hover .stat-name,
+.stat:hover .stat-desc,
+.stat:hover .stat-sub-desc{
+    color: var(--bg-secondary);
+}
+.welcome-section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+
+@media (max-width: 900px) {
+    .welcome-section{
+        padding: 40px 10px;
+        text-align: center;
+    }
+    .welcome-section>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .welcome-section .stat{
+        width: calc(50% - 10px);
+    }
+    .welcome-section h3{
+        font-size: 1.8rem;
+    }
+    .welcome-section .stat-desc{
+        font-size: 1.5rem;
+    }
+    .welcome-section .stat-sub-desc{
+        font-size: 1.2rem;
+    }
+
+}
+@media (max-width: 600px) {
+    .welcome-section .stat{
+        width: 100%;
+    }
+}

@@ -1,0 +1,250 @@
+#Expeditations{
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-primary);
+}
+#Expeditations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+#Expeditations span {
+    margin-bottom: 40px;
+    color: var(--text-main);
+}
+
+#Expeditations {
+    padding: 10px;
+}
+#Expeditations h2 {
+    font-size: 2rem;
+}
+#Expeditations>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#Expeditations .Expeditation_card {
+    width: 45%;
+    max-width: 600px;
+    height: fit-content;
+    min-height: -webkit-fill-available;
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid var(--text-main);
+}
+#Expeditations .Expeditation_card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+#Expeditations .Expeditation_card p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: var(--text-secondary);
+    text-align: left;
+}
+#Expeditations .Expeditation_card .spotimage {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--text-main);
+}
+#Expeditations .Expeditation_card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0 5px 0;
+}
+@media (max-width: 768px) {
+    #Expeditations .Expeditation_card h3 {
+        font-size: 1.6rem;
+        margin: 10px 0 5px 0;
+    }
+
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: var(--bg-primary, #1a1a2e);
+    border-radius: 16px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.3s ease-out;
+    border: 2px solid var(--text-main);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.modal-region {
+    color: var(--text-main);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-main);
+}
+
+.modal-body {
+    color: var(--text-primary);
+}
+
+.modal-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+.modal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-item {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid var(--text-main, rgba(255, 255, 255, 0.1));
+}
+
+.detail-item strong {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.detail-item span {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.detail-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.detail-item ul li {
+    color: var(--text-secondary);
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item ul li:last-child {
+    border-bottom: none;
+}
+
+#Expeditations .Expeditation_card {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-height: 95vh;
+    }
+
+    .modal-header h2 {
+        font-size: 2rem;
+    }
+
+    .modal-image {
+        height: 250px;
+    }
+
+    .modal-close {
+        font-size: 2rem;
+        width: 35px;
+        height: 35px;
+    }
+}
