@@ -1,5 +1,6 @@
 import Expeditations from "./Expeditations";
 import Hero from "./Hero";
+import Locals from "./Locals";
 import Welcome from "./Welcome";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Welcome />
       <Expeditations />
+      <Locals />
     </>
   );
 }

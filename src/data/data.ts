@@ -221,7 +221,7 @@ export const SPECIES: Species[] = [
     description: 'Tall, four-armed architects. They weave cities into trees.',
     height: '2.3m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/vellara.jpg'
+    imageUrl: '/assets/species/vellara.webp'
   },
   
   // -- Mammals (Land) --
@@ -232,7 +232,7 @@ export const SPECIES: Species[] = [
     description: 'Spherical fur-balls that jump 30ft. Very friendly.',
     height: '0.4m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/hopper.jpg'
+    imageUrl: '/assets/species/hopper.webp'
   },
   {
     id: 'sp-03',
@@ -241,7 +241,7 @@ export const SPECIES: Species[] = [
     description: 'Six-legged predator with camouflage fur. Hunts in the canopy.',
     height: '1.2m',
     dangerLevel: 'Deadly',
-    imageUrl: '/assets/species/panther.jpg'
+    imageUrl: '/assets/species/panther.webp'
   },
   {
     id: 'sp-04',
@@ -250,7 +250,7 @@ export const SPECIES: Species[] = [
     description: 'Massive, slow-moving herbivore with legs like stilts.',
     height: '5.0m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/sloth.jpg'
+    imageUrl: '/assets/species/sloth.webp'
   },
   {
     id: 'sp-05',
@@ -259,7 +259,7 @@ export const SPECIES: Species[] = [
     description: 'Burrows into the floating islands to eat mineral roots.',
     height: '0.8m',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/digger.jpg'
+    imageUrl: '/assets/species/digger.webp'
   },
   {
     id: 'sp-06',
@@ -268,7 +268,7 @@ export const SPECIES: Species[] = [
     description: 'Has flaps of skin to glide between trees. Steals tourist snacks.',
     height: '0.5m',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/lemur.jpg'
+    imageUrl: '/assets/species/lemur.webp'
   },
 
   // -- Avian (Flying) --
@@ -279,7 +279,7 @@ export const SPECIES: Species[] = [
     description: 'Giant manta-rays that float on air currents.',
     height: '4m Wingspan',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/skyray.jpg'
+    imageUrl: '/assets/species/skyray.webp'
   },
   {
     id: 'sp-08',
@@ -288,7 +288,7 @@ export const SPECIES: Species[] = [
     description: 'Small birds with feathers that refract light like crystals.',
     height: '0.2m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/prism.jpg'
+    imageUrl: '/assets/species/prism.webp'
   },
   {
     id: 'sp-09',
@@ -297,7 +297,7 @@ export const SPECIES: Species[] = [
     description: 'Dives at supersonic speeds to catch prey.',
     height: '1.5m',
     dangerLevel: 'Deadly',
-    imageUrl: '/assets/species/hawk.jpg'
+    imageUrl: '/assets/species/hawk.webp'
   },
   {
     id: 'sp-10',
@@ -306,7 +306,7 @@ export const SPECIES: Species[] = [
     description: 'Nocturnal insects the size of a dinner plate. Attracted to light.',
     height: '0.3m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/moth.jpg'
+    imageUrl: '/assets/species/moth.webp'
   },
   {
     id: 'sp-11',
@@ -315,7 +315,7 @@ export const SPECIES: Species[] = [
     description: 'Inflates its throat sac to float silently while hunting.',
     height: '0.6m',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/owl.jpg'
+    imageUrl: '/assets/species/owl.webp'
   },
 
   // -- Aquatic --
@@ -326,7 +326,7 @@ export const SPECIES: Species[] = [
     description: 'Bio-luminescent predator that hunts in the deep reefs.',
     height: '3.0m',
     dangerLevel: 'Deadly',
-    imageUrl: '/assets/species/shark.jpg'
+    imageUrl: '/assets/species/shark.webp'
   },
   {
     id: 'sp-13',
@@ -335,7 +335,7 @@ export const SPECIES: Species[] = [
     description: 'Completely transparent jellyfish. Hard to see, painful sting.',
     height: '1.0m',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/jelly.jpg'
+    imageUrl: '/assets/species/jelly.webp'
   },
   {
     id: 'sp-14',
@@ -344,7 +344,7 @@ export const SPECIES: Species[] = [
     description: 'Generates low-frequency hums that can be felt on land.',
     height: '20m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/whale.jpg'
+    imageUrl: '/assets/species/whale.webp'
   },
   {
     id: 'sp-15',
@@ -353,7 +353,7 @@ export const SPECIES: Species[] = [
     description: 'Shell is heat-resistant. Swims near underwater volcanoes.',
     height: '1.5m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/turtle.jpg'
+    imageUrl: '/assets/species/turtle.webp'
   },
 
   // -- Flora (Plants) --
@@ -364,7 +364,7 @@ export const SPECIES: Species[] = [
     description: 'Floats upright, tethered by vines. Filled with gas.',
     height: '15m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/fern.jpg'
+    imageUrl: '/assets/species/fern.webp'
   },
   {
     id: 'sp-17',
@@ -373,7 +373,7 @@ export const SPECIES: Species[] = [
     description: 'The skyscrapers of the jungle. Wood is as hard as metal.',
     height: '300m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/ironroot.jpg'
+    imageUrl: '/assets/species/ironroot.webp'
   },
   {
     id: 'sp-18',
@@ -382,7 +382,7 @@ export const SPECIES: Species[] = [
     description: 'Thorns are incredibly sharp. Do not touch.',
     height: 'Varies',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/vine.jpg'
+    imageUrl: '/assets/species/vine.webp'
   },
   {
     id: 'sp-19',
@@ -391,7 +391,7 @@ export const SPECIES: Species[] = [
     description: 'Releases bursts of pure oxygen when touched.',
     height: '0.5m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/puff.jpg'
+    imageUrl: '/assets/species/puff.webp'
   },
   {
     id: 'sp-20',
@@ -400,7 +400,7 @@ export const SPECIES: Species[] = [
     description: 'Glows bright purple at night. Covers the jungle floor.',
     height: 'Ground',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/moss.jpg'
+    imageUrl: '/assets/species/moss.webp'
   },
   {
     id: 'sp-21',
@@ -409,7 +409,7 @@ export const SPECIES: Species[] = [
     description: 'Hollow stems that create music in the wind.',
     height: '2m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/reed.jpg'
+    imageUrl: '/assets/species/reed.webp'
   },
   {
     id: 'sp-22',
@@ -418,7 +418,7 @@ export const SPECIES: Species[] = [
     description: 'Large enough to swallow a Cloud-Lemur whole.',
     height: '1.0m',
     dangerLevel: 'Caution',
-    imageUrl: '/assets/species/lily.jpg'
+    imageUrl: '/assets/species/lily.webp'
   },
   {
     id: 'sp-23',
@@ -427,6 +427,6 @@ export const SPECIES: Species[] = [
     description: 'Leaves are reflective silver to deflect the double suns.',
     height: '5m',
     dangerLevel: 'Safe',
-    imageUrl: '/assets/species/mirror.jpg'
+    imageUrl: '/assets/species/mirror.webp'
   }
 ];
